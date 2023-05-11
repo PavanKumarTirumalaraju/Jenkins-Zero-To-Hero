@@ -122,6 +122,9 @@ usermod -aG docker jenkins
 usermod -aG docker ubuntu
 systemctl restart docker
 ```
+ 
+## Grant Access to docker socket 
+sudo chmod 777 /var/run/docker.sock
 
 Once you are done with the above steps, it is better to restart Jenkins.
 
